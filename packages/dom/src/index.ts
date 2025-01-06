@@ -1,5 +1,18 @@
 import {computePosition as computePositionCore} from '@floating-ui/core';
 
+// ---- added code ------ vvv
+export {getBoundingClientRect} from './utils/getBoundingClientRect';
+export {getCssDimensions} from './utils/getCssDimensions';
+export {getDocumentRect} from './utils/getDocumentRect';
+export {getHTMLOffset} from './utils/getHTMLOffset';
+export {getRectRelativeToOffsetParent} from './utils/getRectRelativeToOffsetParent';
+export {getViewportRect} from './utils/getViewportRect';
+export {getVisualOffsets} from './utils/getVisualOffsets';
+export {getWindowScrollBarX} from './utils/getWindowScrollBarX';
+export {isStaticPositioned} from './utils/isStaticPositioned';
+export {unwrapElement} from './utils/unwrapElement';
+// ---- added code ------ ^^^
+
 import {platform} from './platform';
 import type {
   ComputePositionConfig,

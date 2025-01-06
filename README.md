@@ -1,3 +1,58 @@
+This is fork of original repository just to expose bunch of functions
+
+I've extended file [packages/dom/src/index.ts](packages/dom/src/index.ts) with:
+
+```ts
+
+export {getBoundingClientRect} from './utils/getBoundingClientRect';
+export {getCssDimensions} from './utils/getCssDimensions';
+export {getDocumentRect} from './utils/getDocumentRect';
+export {getHTMLOffset} from './utils/getHTMLOffset';
+export {getRectRelativeToOffsetParent} from './utils/getRectRelativeToOffsetParent';
+export {getViewportRect} from './utils/getViewportRect';
+export {getVisualOffsets} from './utils/getVisualOffsets';
+export {getWindowScrollBarX} from './utils/getWindowScrollBarX';
+export {isStaticPositioned} from './utils/isStaticPositioned';
+export {unwrapElement} from './utils/unwrapElement';
+
+```
+
+after that just run
+
+```sh
+
+pnpm install
+# yarn install seems to be working too
+
+npm run build
+
+export PORT="8080" && echo -e "\n    http://localhost:${PORT} \n" && python3 -m http.server ${PORT}
+# or
+python -m http.server 8080 --directory .
+
+
+```
+
+In order to understand what has changed in relation to original repository just analyse latest commit. I'll try to keep all changes in one commit to have one place with full picture of changes.
+
+I can't promise to always keep this repository fully synced with original repository. 
+I will do that just when I will need it. I have not time also to build autoupdating pipeline. ¯\_(ツ)_/¯
+
+To see result in action check: https://stopsopa.github.io/floating-ui/
+
+Repository is created in response to no hope for this being done in the original repository: https://github.com/floating-ui/floating-ui/discussions/3181
+
+generated files:
+
+- https://stopsopa.github.io/floating-ui/packages/dom/dist/floating-ui.dom.browser.mjs
+- https://stopsopa.github.io/floating-ui/packages/dom/dist/floating-ui.dom.mjs
+- https://stopsopa.github.io/floating-ui/packages/dom/dist/floating-ui.dom.esm.js
+- https://stopsopa.github.io/floating-ui/packages/dom/dist/floating-ui.dom.browser.min.mjs
+- https://stopsopa.github.io/floating-ui/packages/dom/dist/floating-ui.dom.umd.js
+- https://stopsopa.github.io/floating-ui/packages/dom/dist/floating-ui.dom.umd.min.js
+
+---
+
 <p align="center">
   <img src="https://github.com/floating-ui/floating-ui/blob/master/website/assets/floating-ui-banner.png" alt="Floating UI" width="70%">
 <p>
