@@ -41,6 +41,7 @@ I will do that just when I will need it. I have not time also to build autoupdat
 To see result in action check: https://stopsopa.github.io/floating-ui/
 
 Repository is created in response to no hope for this being done in the original repository: https://github.com/floating-ui/floating-ui/discussions/3181
+and corresponding [PR](https://github.com/floating-ui/floating-ui/pull/3194) created from branch [request-3181](https://github.com/stopsopa/floating-ui/tree/request-3181)
 
 generated files:
 
